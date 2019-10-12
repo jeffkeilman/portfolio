@@ -22,13 +22,13 @@ const Card = () => {
             <span>jkeilman93@gmail.com</span>
           </div>
           <div className="link-row">
-            <a href="https://github.com/jeffkeilman" target="_blank">
+            <a href="https://github.com/jeffkeilman" target="_blank" rel="noopener noreferrer">
               <img src={GitHub} alt="github" />
               <span>jeffkeilman</span>
             </a>
           </div>
           <div className="link-row">
-            <a href="https://www.linkedin.com/in/jeffkeilman" target="_blank">
+            <a href="https://www.linkedin.com/in/jeffkeilman" target="_blank" rel="noopener noreferrer">
               <img src={LinkedIn} alt="linkedin" />
               <span>jeffkeilman</span>
             </a>
