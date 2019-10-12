@@ -1,14 +1,89 @@
 .App {
-  background-color: #000;
-  color: #fff;
+  width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1c1c2a;
+}
+
+.card-container {
+  max-width: 400px;
+  width: 100%;
+  height: 450px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  margin: 10px;
+}
+
+.card-container::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #8d99ae;
+  position: absolute;
+  top: 100px;
+}
+
+.card-container::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: calc((100% / 2 - 50px));
+  height: 100px;
+  width: 100px;
+  background: white url("https://avatars.dicebear.com/v2/male/jeffer.svg");
+  border-radius: 50%;
+  border: 1px solid #8d99ae;
+  z-index: 10;
+}
+
+.card-content {
+  width: 100%;
+  padding: 150px 20px 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-content header {
+  width: 100%;
+}
+
+.card-content h1 {
+  color: #1c1c2a;
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+  width: 100%;
   text-align: center;
 }
 
-.name {
-  color: #ff0000;
-  font-family: 'VT323', monospace;
-  font-size: 50px;
-  margin: 5px 0 0 30px;
-  padding: 0;
+.card-content h2 {
+  color: #1c1c2a;
+  font-size: 1.2rem;
+  letter-spacing: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.link-row {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.link-row span {
+  margin-left: 10px;
+}
+
+.link-row a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
